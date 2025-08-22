@@ -2,66 +2,253 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <link href="dist/output.css" rel="stylesheet">
 </head>
 <body class="bg-white">
-    <header class="flex flex-row px-32 py-5 items-center justify-between sticky top-0 bg-white">
-        <img height="32" width="162" src="assests/website-logo.svg" alt="">
-        <nav>
-            <ul class="flex flex-row gap-9">
-                <li class="font-semibold text-gray-800 text-l"><a href="">Early Access</a></li>
-                <li class="font-semibold text-gray-800 text-l"><a href="">How It Works</a></li>
-                <li class="font-semibold text-gray-800 text-l"><a href="">Referral</a></li>
+    <header class="header">
+        <img height="32" width="96" src="assests/website-logo.svg" alt="">
+        <nav class="nav-menu" data-opened="false">
+            <ul class="nav-list">
+                <li class="nav-element-link"><a href="#early-access">Early Access</a></li>
+                <li class="nav-element-link"><a href="#features">Features</a></li>
+                <li class="nav-element-link"><a href="#works">How It Works</a></li>
+                <li class="nav-element-link"><a href="#referral">Referral</a></li>
             </ul>
         </nav>
-        <button class="bg-purple-800 shadow-[0_4px_8px_rgba(110,17,176,0.25)] text-white font-bold px-9 py-2 rounded-lg hover:bg-purple-700 hover:scale-105 transition-all">Join Waitlist</button>
+        <button class="btn">Join Waitlist</button>
+        <div class="menu-button">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
     </header>
-    <section class="flex flex-col justify-center items-center w-full h-dvh bg-radial-[at_0%_0%] from-purple-100 to-white to-70%">
-        <div class="w-7xl flex flex-col gap-4 px-8 py-10">
-            <h1 class="font-bold text-6xl text-black text-center">Meet Man<span class="text-purple-800">AI</span>ger</h1>
-            <h2 class="text-5xl font-semibold text-gray-900 text-center">Your AI Manager for Creators & Streamers</h2>
-            <p class="text-2xl font-medium text-gray-800 text-center mt-4">Save hours every week. Close more brand deals. Get paid on time. <br> All with one AI-powered manager built for creators like you.</p>
-            <div class="w-full flex mt-4 justify-center">
-                <button class="flex gap-1 bg-purple-900 shadow-[0_4px_8px_rgba(110,17,176,0.25)] border-4 border-purple-500 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-purple-600 hover:scale-105 transition-all"><p>Join the Early Waitlist </p><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> <p>Get 1 Month Free</p></button>
+    <section class="hero-section">
+        <div class="hero-text-section">
+            <h1 class="heading-1">Meet Man<span class="text-purple-800">AI</span>ger</h1>
+            <h2 class="heading-2">Your AI Manager for Creators & Streamers</h2>
+            <p class="hero-paragraph">Save hours every week. Close more brand deals. Get paid on time. <br> All with one AI-powered manager built for creators like you.</p>
+            <div class="w-full flex mt-4 justify-center lg:mt-6">
+                <button class="hero-button"><p>Join the Early Waitlist </p><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> <p>Get 1 Month Free</p></button>
             </div>
         </div>
     </section>
-    <section class="flex flex-col justify-center items-center w-full px-32 py-12">
-        <div class="flex flex-col gap-2 mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 text-center">Early Access for Early Innovators</h2>
-            <p class="text-lg font-medium text-gray-600 text-center">Give it a try before taking the plunge</p>
+    <section class="section-component section-inverse-color">
+        <div class="section-header">
+            <h2 class="heading-2" id="early-access">Early Access for Early Innovators</h2>
+            <p class="section-subheading">Be among the first 100 creators to try ManAIger</p>
+        </div>
+        <div class="infitite-scroll-container">
+            <div class="scrolling-elements">
+                <div class="element-container">
+                    <img class="scroll-logo" src="assests/logoipsum-397.svg" alt="">
+                    <img class="scroll-logo" src="assests/logoipsum-391.svg" alt="">
+                    <img class="scroll-logo" src="assests/logoipsum-385.svg" alt="">
+                    <img class="scroll-logo" src="assests/logoipsum-380.svg" alt="">
+                    <img class="scroll-logo" src="assests/logoipsum-371.svg" alt="">
+                </div>
+                <div class="element-container">
+                    <img class="scroll-logo" src="assests/logoipsum-397.svg" alt="">
+                    <img class="scroll-logo" src="assests/logoipsum-391.svg" alt="">
+                    <img class="scroll-logo" src="assests/logoipsum-385.svg" alt="">
+                    <img class="scroll-logo" src="assests/logoipsum-380.svg" alt="">
+                    <img class="scroll-logo" src="assests/logoipsum-371.svg" alt="">
+                </div>
+            </div>
         </div>
     </section>
-    <section class="flex flex-col justify-center items-center w-full px-32 py-12">
-        <div class="flex flex-col gap-2 mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 text-center">How It Works</h2>
-            <p class="text-lg font-medium text-gray-600 text-center">From Brand Match to Payment - Seamlessly</p>
+    <section class="section-component">
+        <div class="section-header">
+            <h2 class="heading-2" id="features">Core Features</h2>
         </div>
-        <div class="grid grid-cols-3 w-full h-10 gap-x-8">
-            <div class="bg-purple-50 w-full h-full rounded-lg shadow border border-gray-400"></div>
-            <div class="bg-purple-50 w-full h-full rounded-lg shadow border border-gray-400"></div>
-            <div class="bg-purple-50 w-full h-full rounded-lg shadow border border-gray-400"></div>
-        </div>
-    </section>
-    <section class="flex flex-col justify-center items-center w-full px-32 py-12">
-        <div class="flex flex-col gap-2 mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 text-center">Don't Get Left Behind</h2>
-            <p class="text-lg font-medium text-gray-600 text-center">Influencers are already joining. Don't miss your spot</p>
-        </div>
-    </section>
-    <section class="flex flex-col justify-center items-center w-full px-32 py-12">
-        <div class="flex flex-col gap-2 mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 text-center">Everything is More Fun With Friends</h2>
-            <p class="text-lg font-medium text-gray-600 text-center">Inivte more people to join in on this exciting new opportunity</p>
-        </div>
-    </section>
-    <section class="flex flex-col justify-center items-center w-full px-32 py-12">
-        <div class="flex flex-col gap-2 mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 text-center">Join Waitlist Now --- Free for the First Month</h2>
-            <p class="text-lg font-medium text-gray-600 text-center">No Credit Card Required</p>
+        <div class="grid-columns-4-by-4">
+            <div class="card-info-container">
+                <img class="card-container-image" src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" alt="">
+                <h3 class="card-header">Brand Match AI</h3>
+                <p class="card-paragraph">Finds sponsors that fit your audience, helping you discover the perfect partnerships for your niche and boosting your growth potential.</p>
+            </div>
+            <div class="card-info-container">
+                <img class="card-container-image" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="">
+                <h3 class="card-header">Smart Briefings</h3>
+                <p class="card-paragraph">Receive daily reminders and actionable growth insights, so you stay on top of opportunities and never miss an important update.</p>
+            </div>
+            <div class="card-info-container">
+                <img class="card-container-image" src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg" alt="">
+                <h3 class="card-header">Deal Tracking</h3>
+                <p class="card-paragraph">Keep all your sponsorships organized in one dashboard, allowing you to monitor progress, deadlines, and communications effortlessly.</p>
+            </div>
+            <div class="card-info-container">
+                <img class="card-container-image" src="https://images.pexels.com/photos/8962519/pexels-photo-8962519.jpeg" alt="">
+                <h3 class="card-header">Fast Invoicing</h3>
+                <p class="card-paragraph">Automatically generate and send professional invoices, saving time and ensuring you get paid quickly and accurately.</p>
+            </div>
         </div>
     </section>
+    <section class="section-component section-inverse-color" id="works">
+        <div class="section-header">
+            <h2 class="heading-2">How It Works</h2>
+            <p class="section-subheading">From Brand Match to Payment - Seamlessly</p>
+        </div>
+        <div class="grid-columns-cards">
+            <div class="card-info-container">
+                <img class="h-24" src="assests/handshake-svgrepo-com.svg" alt="">
+                <h3 class="card-header">Get Matched with Brands</h3>
+                <p class="card-paragraph">AI suggests partnerships based on your niche, helping you discover relevant brands that align with your audience and goals.</p>
+            </div>
+            <div class="card-info-container">
+                <img class="h-24" src="assests/workflows-svgrepo-com.svg" alt="">
+                <h3 class="card-header">Automated Outreach </h3>
+                <p class="card-paragraph">Smart email drafts, ready to send, so you can reach out to potential partners quickly while keeping a professional tone.</p>
+            </div>
+            <div class="card-info-container">
+                <img class="h-24" src="assests/profits-statistics-svgrepo-com.svg" alt="">
+                <h3 class="card-header">Track Earnings & Invoices</h3>
+                <p class="card-paragraph">Simple dashboard + Stripe payments, giving you a clear view of your income, invoices, and payout history in one place.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-component" id="referral">
+        <div class="section-container-row">
+            <div class="section-header-container">
+                <h2 class="font-semibold text-2xl">Everything is More Fun With Friends</h2>
+                <p class="font-medium text-lg mb-4">Inivte more people to join in on this exciting new opportunity</p>
+                <button class="btn"><p>Join Waitlist + Invite Friends</p><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> <p>Unlock Extra Free Months</p></button>
+            </div>
+            <div class="w-full flex justify-center  ">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfyFc8i5AJyoK6aNIEtynD99O8Ou5yLspiC18E09YefZJUY9g/viewform?embedded=true" class="min-h-96 w-full lg:h-auto" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </section>
+    <section class="section-component section-inverse-color">
+        <div class="section-header">
+            <h2 class="heading-2">Don't Get Left Behind</h2>
+            <p class="section-subheading">Many have already tried ManAIger out</p>
+        </div>
+        <div class="testimonial-grid-bento">
+            <div class="testimonial-card">
+                <img class="profile-image" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="">
+                <div class="card-right">
+                    <h3 class="heading-3">Daniel Kim</h3>
+                    <p>ManAIger has been a game changer for my business. It keeps everything organized and helps me focus on creating instead of chasing files.</p>
+                    <div class="star-rating-container">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img class="profile-image" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="">
+                <div class="card-right">
+                    <h3 class="heading-3">Priya Nair</h3>
+                    <p>With ManAIger, our small team feels like a big one. Collaboration is smoother, and we never miss a deadline anymore.</p>
+                    <div class="star-rating-container">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img class="profile-image" src="https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg" alt="">
+                <div class="card-right">
+                    <h3 class="heading-3">James Carter</h3>
+                    <p>I’ve tried other tools, but ManAIger is by far the most intuitive. The clean interface makes content management effortless</p>
+                    <div class="star-rating-container">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img class="profile-image" src="https://images.pexels.com/photos/774095/pexels-photo-774095.jpeg" alt="">
+                <div class="card-right">
+                    <h3 class="heading-3">Sarah Lopez</h3>
+                    <p>ManAIger has completely streamlined my workflow. I can schedule, edit, and track performance all in one place—it saves me hours every week.</p>
+                    <div class="star-rating-container">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-component">
+        <div class="section-header">
+            <h2 class="heading-2">Frequently Asked Questions</h2>
+            <p class="section-subheading">Have a burning question? Let us answer them for you.</p>
+        </div>
+        <div class="accordian-container">
+          <details class="accordian-button">
+            <summary class="accordian-title">
+              <span>What is the launch day for ManAIger?</span>
+              <svg class="w-5 h-5 text-gray-600 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="accordian-content">
+              The beta begins in about 2 weeks. Full software release is to be announced in the near future.
+            </p>
+          </details>
+          <details class="accordian-button">
+            <summary class="accordian-title">
+              <span>Who is allowed to use this?</span>
+              <svg class="w-5 h-5 text-gray-600 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="accordian-content">
+              Anyone can use ManAIger. From small Youtubers to large social media organizations.
+            </p>
+          </details>
+          <details class="accordian-button">
+            <summary class="accordian-title">
+              <span>How much does it cost?</span>
+              <svg class="w-5 h-5 text-gray-600 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <p class="accordian-content">
+              Early adopters get 1 month free. Paid tiers are to be announced at a later day.
+            </p>
+          </details>
+        </div>
+    </section>
+    <section class="section-component">
+        <div class="section-header">
+            <h2 class="heading-2">Creators, your AI manager is here. Ready to grow?</h2>
+            <p class="section-subheading">No Credit Card Required</p>
+        </div>
+        <button class="hero-button">Join the Waitlist</button>
+    </section>
+    <footer class="w-full bg-white text-white py-10 border-t-2 border-purple-200">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8">
+
+        <div>
+          <img src="assests/website-logo.svg" alt="Logo" class="h-10 mb-4">
+          <p class="text-sm text-gray-900">© 2025 ManAIger</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-900">Navigation</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-900 hover:text-purple-500 transition">Early Access</a></li>
+            <li><a href="#" class="text-gray-900 hover:text-purple-500 transition">How It Works</a></li>
+            <li><a href="#" class="text-gray-900 hover:text-purple-500 transition">Referrals</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (window.screen.height <= 768) {
+            navMenu.classList.add('-translate-x-full');
+        }
+
+        menuButton.addEventListener('click', () => {
+          const isOpen = navMenu.getAttribute('data-opened') === 'true';
+        
+          navMenu.classList.toggle('-translate-x-full', isOpen); // hide when open
+          navMenu.classList.toggle('translate-x-0', !isOpen);    // show when closed
+          navMenu.setAttribute('data-opened', String(!isOpen));
+        });
+    </script>
 </body>
 </html>
