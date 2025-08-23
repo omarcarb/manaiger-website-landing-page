@@ -30,7 +30,7 @@
   @apply w-full flex flex-col gap-2 px-4 py-16 lg:gap-4;
 }
 .hero-button{
-  @apply flex items-center gap-1 bg-gradient-to-b from-purple-800  to-purple-900 shadow-[0px_0px_4px_4px_rgba(169,_0,_255,_0.5)] text-white px-4 py-4 rounded-4xl text-xs font-bold hover:bg-purple-600 hover:border-purple-900 hover:shadow-[0px_0px_16px_8px_rgba(169,_0,_255,_0.5)] hover:scale-105 transition-all lg:text-lg lg:px-8 lg:py-4;
+  @apply relative inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-full border-2 border-white/20 text-white text-base font-semibold tracking-[0.5px] cursor-pointer overflow-hidden bg-gradient-to-br from-[#3d006e] to-[#3d006e] shadow-[0_0_20px_rgba(147,51,234,0.35)] backdrop-blur-md  transition-all duration-400 ease-in-out  hover:scale-105 hover:shadow-[0_0_40px_rgba(236,72,153,0.45)] before:content-[''] before:absolute before:-top-1/2 before:-left-1/2  before:w-[200%] before:h-[200%] before:bg-[conic-gradient(from_0deg,#9333ea,#ec4899,#9333ea)] before:animate-[spin_4s_linear_infinite] before:-z-20  after:content-[''] after:absolute after:inset-[2px] after:bg-[#3d006e] after:rounded-full after:-z-10 z-10 lg:text-lg lg:px-8 lg:py-4;
 }
 .section-component{
   @apply flex flex-col justify-center items-center w-full px-4 py-12 lg:py-24 lg:px-64 md:px-16;
@@ -39,7 +39,7 @@
   @apply bg-purple-50;
 }
 .card-info-container{
-  @apply w-full h-max rounded-2xl shadow border-2 border-purple-100 flex flex-col gap-4 py-4 px-4 bg-gradient-to-b from-purple-50 to-white;
+  @apply w-full h-max relative rounded-2xl shadow border-2 flex flex-col gap-4 py-8 px-4 bg-gradient-to-b from-purple-50 to-white;
 }
 .section-header{
   @apply flex flex-col gap-2 mb-4 md:mb-9;
@@ -60,13 +60,13 @@
   @apply text-sm font-medium text-gray-600 text-center lg:text-xl font-sans;
 }
 .grid-columns-cards{
-  @apply grid grid-cols-1 grid-rows-3 w-full h-max gap-y-4 lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-8;
+  @apply grid grid-cols-1 grid-rows-3 w-full h-max gap-y-4 lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-16;
 }
 .card-container-image{
   @apply w-full h-36 rounded-xl md:h-96;
 }
 .grid-columns-4-by-4{
-  @apply grid grid-cols-1 grid-rows-4 w-full h-max gap-y-4 lg:grid-cols-2 lg:grid-rows-2 lg:gap-8;
+  @apply grid grid-cols-1 grid-rows-4 w-full h-max gap-y-4 lg:grid-cols-4 lg:grid-rows-1 lg:gap-8;
 }
 .testimonial-grid-bento{
   @apply grid grid-cols-1 grid-rows-4 w-full h-max md:grid-cols-2 md:grid-rows-2 md:gap-8;
@@ -98,11 +98,12 @@
 .infitite-scroll-container {
   @apply w-full h-12 overflow-hidden mt-12 relative;
 }
-
+.card-number{
+  @apply w-12 h-12 font-extrabold text-white bg-purple-400 flex justify-center items-center text-2xl rounded-full absolute -top-6 left-1/2 -translate-x-1/2;
+}
 .scrolling-elements {
   @apply w-max flex gap-8 animate-[infiniteScroll_12s_linear_infinite] lg:w-[200%];
 }
-
 .element-container {
   @apply w-full gap-4 flex justify-between box-border px-0;
 }
