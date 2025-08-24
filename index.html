@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="dist/output.css" rel="stylesheet">
+    <link rel="icon" href="assests/IMG_3974.ico" type="image/x-icon">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-XXXXXXX');
+    </script>
 </head>
 <body class="bg-white">
     <header class="header">
@@ -18,7 +28,7 @@
                 <li class="nav-element-link"><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
-        <button class="btn"><a href="#referral">Join Waitlist</a></button>
+        <button class="btn" id="waitlist-button">Join Waitlist</button>
         <div class="menu-button">
             <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -46,7 +56,11 @@
             <p class="section-subheading">Be among the first 100 creators to try ManAIger</p>
         </div>
         <div class="infitite-scroll-container">
-            <div class="scrolling-elements">
+            <!---Gradient Elements-->
+            <div class="absolute left-0 top-0 h-full w-24 pointer-events-none bg-gradient-to-r from-purple-50 to-transparent" style="z-index: 20;"></div>
+            <div class="absolute right-0 top-0 h-full w-24 pointer-events-none bg-gradient-to-l from-purple-50 to-transparent" style="z-index: 20;"></div>
+            <!---Gradient Elements End-->
+            <div class="scrolling-elements z-10">
                 <div class="element-container">
                     <img class="scroll-logo" src="assests/logoipsum-397.svg" alt="">
                     <img class="scroll-logo" src="assests/logoipsum-391.svg" alt="">
@@ -121,11 +135,12 @@
         <div class="section-container-row">
             <div class="section-header-container">
                 <h2 class="font-semibold text-2xl">Everything is More Fun With Friends</h2>
-                <p class="font-medium text-lg mb-4">Invite more people to join in on this exciting new opportunity</p>
+                <p class="font-medium text-lg mb-8">Invite more people to join in on this exciting new opportunity</p>
                 <button class="hero-button" id="waitlist-button"><p>Join Waitlist + Invite Friends</p><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><p>Unlock Extra Free Months</p></button>
+                <p class="font-bold text-purple-700 mt-2">Note: Add your referrer’s email in the ‘Who referred you?’ field.</p>
             </div>
-            <div class="w-full md:w-1/2 flex justify-center  ">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfyFc8i5AJyoK6aNIEtynD99O8Ou5yLspiC18E09YefZJUY9g/viewform?embedded=true" class="min-h-96 w-full lg:h-auto" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img class="h-96 w-full rounded-xl shadow-2xl" src="https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg" alt="">
             </div>
         </div>
     </section>
@@ -134,19 +149,10 @@
             <h2 class="heading-2">Don't Get Left Behind</h2>
             <p class="section-subheading">Many have already tried ManAIger out</p>
         </div>
+        <div class="flex justify-center items-center">
+            <p class="text-4xl font-extrabold">Coming Soon</p>
+        </div>
         <div class="testimonial-grid-bento">
-            <div class="testimonial-card">
-                Coming Soon
-            </div>
-            <div class="testimonial-card">
-                Coming Soon
-            </div>
-            <div class="testimonial-card">
-                Coming Soon
-            </div>
-            <div class="testimonial-card">
-                Coming Soon
-            </div>
         </div>
     </section>
     <section class="section-component" id="faq">

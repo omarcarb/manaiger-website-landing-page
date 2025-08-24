@@ -96,16 +96,16 @@
   @apply text-amber-500 text-xl lg:text-2xl;
 }
 .infitite-scroll-container {
-  @apply w-full h-12 overflow-hidden mt-12 relative;
+  @apply w-full h-12 overflow-hidden mt-12 items-center relative;
 }
 .card-number{
   @apply w-8 h-8 font-bold text-white bg-purple-400 flex justify-center items-center text-lg rounded-full absolute -top-4 left-1/2 -translate-x-1/2 md:w-12 md:h-12 md:font-extrabold md:-top-6 md:text-2xl;
 }
 .scrolling-elements {
-  @apply w-max flex gap-8 animate-[infiniteScroll_12s_linear_infinite] lg:w-[200%];
+  @apply w-max flex mt-3 gap-8 animate-[infiniteScroll_12s_linear_infinite] lg:w-[200%];
 }
 .element-container {
-  @apply w-full gap-4 flex justify-between box-border px-0;
+  @apply w-full gap-4 flex justify-around box-border px-0;
 }
 .scroll-logo {
   @apply max-h-8;
@@ -121,6 +121,6 @@
 }
 @keyframes infiniteScroll {
   to{
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% - 16px));
   }
 }
